@@ -1,0 +1,19 @@
+<html lang='en'>
+  <head>
+    <meta charset='UTF-8' />
+    <meta name='viewport' content='width=device-width, initial-scale=1.0' />
+    <title>Password Reset</title>
+    <link rel='stylesheet' href='/styles.css' />
+  </head>
+  <body>
+    <h1>Reset Your Password</h1>
+    <form action='/' method='POST'>
+      <input type='hidden' name='userId' value='{{userId}}' />
+      <div>
+        <label for='password'>New Password:</label>
+        <input type='password' id='password' name='password' required />
+      </div>
+      <button type='submit'>Reset Password</button>
+    </form>
+  </body>
+</html>
